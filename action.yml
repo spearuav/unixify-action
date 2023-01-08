@@ -1,0 +1,13 @@
+name: 'Hello World'
+description: 'Convert Windows file paths to unix paths.'
+inputs:
+  path:
+    description: 'windows path to convert'
+    required: true
+    default: '~/'
+outputs:
+  path:
+    description: 'unix path'
+runs:
+  using: 'node16'
+  main: 'index.js'
