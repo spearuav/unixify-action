@@ -17,7 +17,14 @@ Path converted to unix style.
 ## Example usage
 
 ```yaml
-uses: actions/unixify-action@v0.1
-with:
-  path: '\\path\\to\\file'
+steps:
+  - name: Unixify a string
+    id: unixify_path
+    uses: spearuav/unixify-action@v0.1
+    with:
+      path: "c:\\Temp\\folder\\app.exe"
+
+  - name: Show result
+    run: |
+      echo ${{ steps.unixify_path.outputs.path }}
 ```

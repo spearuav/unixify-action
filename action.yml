@@ -1,5 +1,8 @@
-name: 'Hello World'
+name: 'unixify-action'
 description: 'Convert Windows file paths to unix paths.'
+branding:
+  icon: 'folder'
+  color: 'red'
 inputs:
   path:
     description: 'windows path to convert'
